@@ -1,0 +1,14 @@
+.products-container {
+  display: flex;
+  justify-content: center;
+}
+
+.products-card {
+  align-content: center;
+  width: 500px;
+  height: 720px;
+  /* background-color: burlywood; */
+  border: 3px solid black;
+  padding-top: 20px;
+  padding: 10px;
+}

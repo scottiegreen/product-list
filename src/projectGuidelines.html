@@ -1,0 +1,84 @@
+Final Exam Project: Product Page Application
+
+Objective
+Create a Vite React application that displays a list of 20 products. The main product page should show the price, title, photo, and rating for each product. When a user clicks on a product, it should navigate to a new page displaying detailed information about the selected product. (DON’T FORGET THE BACK BUTTON).
+NOTE
+Screenshots are included to illustrate examples of both the Product Page and the Product Details Page. You are encouraged to design the website using your own creative inspiration. However, if you prefer, you may create a mock site based on these examples.
+
+Endpoints (Use axios or try/catch/fetch)
+Product List (20 products): https://fakestoreapi.com/products
+Product Details by ID: https://fakestoreapi.com/products/{id}
+
+Project Requirements
+Project Setup:
+Create a GitHub repository for your project called “TheFinalsProductPage”
+Initialize a new Vite React project.
+Ensure the project is structured and follows best practices.
+Commit regularly (at least 4 descriptive commits).
+You may install any necessary Node packages.
+Required Components:
+ProductList: Displays a list of products with their price, title, photo, and rating.
+ProductDetail: Displays detailed information about a selected product.
+Cart: Manages items added to the cart and displays a cart summary.
+Navbar: with Home button that takes you back to the home page.
+Additional components as needed to support features.
+
+State Management:
+Use React hooks (useState, useEffect, useContext, createContext) to manage state.
+Fetch and manage product data efficiently.
+Routing: (Research Assignment)
+Create a ProductContext to handle global product state.
+Add a Cart Context to manage items added to the cart globally.
+Hint for ProductContext and CartContext:
+ProductContext: To manage global product data across your application, start by creating a context using createContext() and then wrap your main component (or the part of the app where you need shared product data) with a provider. Use useEffect to fetch product data once and pass it down through the context.
+Example: Create a ProductContext file where you initialize context and define a provider component. In the provider, use useState to store product data and useEffect to fetch products from the API.
+CartContext: To keep track of items added to the cart, follow a similar approach. Set up CartContext with createContext() and manage an array of cart items in a provider. You can define functions like addToCart and removeFromCart in this context, and pass them as values to make them accessible throughout the app.
+
+Use react-router-dom to handle navigation between the product list, product detail, and cart pages.
+Hint: For the Product Details Page, use useParams to get the product ID.
+
+UI/UX Enhancements:
+Search and Filter: Add an input field for searching products by name and a dropdown to filter by category.-- come to me
+Sorting Options: Enable sorting of products by price (low to high, high to low). (Optional)
+Material UI: Use Material UI components to modularize the UI and ensure a consistent design.
+CSS Styling: Implement basic styling with CSS or a CSS-in-JS solution (e.g., styled-components) if needed.
+Cart Management: Include an "Add to Cart" button on each product. Users should be able to view cart details from a cart icon in the header. (PART OF RESEARCH PORTION)
+Data Handling:
+Use the provided product data to populate the product list and detail views.
+Handle loading and error states: Display loading indicators while fetching data and error messages if the API fails. (optional)
+Additional Features:
+Input Validation: Ensure that all input fields, such as search and filter, have proper validation. (Make sure users can’t submit an empty string)
+Frequent GitHub Commits: Make frequent, descriptive commits to track progress.
+Documentation:
+Provide a README file explaining how to set up and run the project.
+Include comments in the code to explain the logic where necessary.
+Development Process:
+First, TRY IT YOURSELF!
+Second, Google it!(AI it)
+Third, consult a peer!
+First, talk through the problem with the peer. You just might solve it yourself!
+Second, work through it with peer
+Lastly, Phone your tech lead(MR.A!)
+
+
+
+
+
+
+
+
+UI Examples
+
+
+
+
+
+
+
+
+PRODUCT DETAILS PAGE EXAMPLES:
+
+
+
+[
+\]
